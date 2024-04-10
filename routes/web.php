@@ -157,11 +157,18 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/laporan/returpembelian', 'LaporanController@returpembelian');
 
     Route::get('/laporan/stok/print', 'LaporanController@printstok');
+    Route::get('/laporan/stok/bibit', 'LaporanController@stokbibit');
+    Route::get('/laporan/stok/sawit', 'LaporanController@stoksawit');
     Route::get('/laporan/penjualan/print', 'LaporanController@printpenjualan');
     Route::get('/laporan/pembelian/print', 'LaporanController@printpembelian');
 
     Route::post('laporan/penjualan/bulan', 'LaporanController@bulanpenjualan');
     Route::post('laporan/penjualan/tahun', 'LaporanController@tahunpenjualan');
+
+    Route::get('/laporan/pekerja', 'LaporanController@pekerja');
+    Route::get('/laporan/tanam', 'LaporanController@tanam');
+    Route::get('/laporan/panen', 'LaporanController@panen');
+    Route::get('/laporan/perawatan', 'LaporanController@perawatan');
 
     Route::post('laporan/pembelian/bulan', 'LaporanController@bulanpembelian');
     Route::post('laporan/pembelian/tahun', 'LaporanController@tahunpembelian');
@@ -172,10 +179,12 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/laporan/customer', 'LaporanController@customer');
     Route::get('/laporan/supplier', 'LaporanController@supplier');
     Route::get('/laporan/retail', 'LaporanController@retail');
+    Route::get('/laporan/pelanggan', 'LaporanController@pelanggan');
     Route::get('/laporan/pengeluaran', 'LaporanController@pengeluaran');
     Route::get('/laporan/pengeluaran/print', 'LaporanController@printpengeluaran');
 
     Route::get('/laporan/customer/print', 'LaporanController@printcustomer');
     Route::get('/laporan/supplier/print', 'LaporanController@printsupplier');
     Route::get('/laporan/retail/print', 'LaporanController@printretail');
+    Route::get('/laporan/pelanggan/print', 'LaporanController@printpelanggan');
 });

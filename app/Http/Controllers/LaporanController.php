@@ -3,14 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Barang;
+use App\Bibit;
 use App\Retail;
 use App\Kustomer;
+use App\Pelanggan;
 use App\Supplier;
 use App\Pembelian;
 use App\Penjualan;
 use App\Pengeluaran;
 use App\Retur_pembelian;
 use App\Retur_penjualan;
+use App\Sawit;
 use Illuminate\Http\Request;
 
 class LaporanController extends Controller
@@ -40,6 +43,35 @@ class LaporanController extends Controller
         return view('laporan.retail');
     }
 
+    public function printpelanggan()
+    {
+        $data = Pelanggan::all();
+        return view('print.pelanggan', compact('data'));
+    }
+
+    public function pekerja()
+    {
+        return view('laporan.pekerja');
+    }
+    public function tanam()
+    {
+        return view('laporan.tanam');
+    }
+    public function panen()
+    {
+        return view('laporan.panen');
+    }
+    public function perawatan()
+    {
+        return view('laporan.perawatan');
+    }
+
+
+    public function pelanggan()
+    {
+        return view('laporan.pelanggan');
+    }
+
     public function supplier()
     {
         return view('laporan.supplier');
@@ -64,6 +96,17 @@ class LaporanController extends Controller
     {
         $data = Barang::all();
         return view('print.stok', compact('data'));
+    }
+
+    public function stokbibit()
+    {
+        $data = Bibit::all();
+        return view('print.stokbibit', compact('data'));
+    }
+    public function stoksawit()
+    {
+        $data = Sawit::all();
+        return view('print.stoksawit', compact('data'));
     }
 
     public function printretail()

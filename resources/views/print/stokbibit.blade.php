@@ -25,7 +25,7 @@
       <td width=100></td>
       <td align=center class="judul"><b><font size="5">
         PT Candi Arta<br /></font></b>
-        <b>JL.............<br></b>
+        <b>Jl................. <br></b>
       </td>
       <td width=100></td>
     </tr>
@@ -39,7 +39,7 @@
         Tanggal : {{\Carbon\Carbon::today()->format('d/m/Y')}}
         <address>
           <strong>PT Candi Arta</strong><br>
-          JL................ <br>
+          <b>Jl................. <br></b>
           Phone: 0878-2134-5432<br>
           Email: candiarta@gmail.com
         </address>
@@ -48,10 +48,18 @@
       <div class="col-sm-4 invoice-col">
         <br><br><br>
         <address>
-            <h3><strong>LAPORAN SUPPLIER</strong></h3>
+            <h3><strong>LAPORAN STOK</strong></h3>
             
         </address>
       </div>
+      <!-- /.col -->
+      {{-- <div class="col-sm-4 invoice-col">
+        <b>No Transaksi {{$data->no_transaksi}}</b><br>
+        <br>
+        <b>Order ID:</b> {{$data->id}}<br>
+        <b>Tgl Pembayaran:</b> {{$data->created_at}}<br>
+        <b>Tipe Pembayaran:</b> CASH
+      </div> --}}
       <!-- /.col -->
     </div>
     <!-- /.row -->
@@ -63,9 +71,9 @@
           <thead>
           <tr>
             <th>No</th>
-            <th>Nama Supplier</th>
-            <th>Alamat</th>
-            <th>No Telp</th>
+            <th>Kode</th>
+            <th>Nama</th>
+            <th>Stok</th>
           </tr>
           </thead>
           @php
@@ -75,9 +83,9 @@
               @foreach ($data as $item)
                 <tr>
                     <td>{{$no++}}</td>
-                    <td>{{$item->nama}}</td>
-                    <td>{{$item->alamat}}</td>
-                    <td>{{$item->telp}}</td>
+                    <td>{{$item->kode}}</td>
+                    <td>{{$item->jenis}}</td>
+                    <td>{{$item->stok}}</td>
                 </tr>
               @endforeach
           </tbody>

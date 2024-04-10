@@ -25,7 +25,7 @@
       <td width=100></td>
       <td align=center class="judul"><b><font size="5">
         PT Candi Arta<br /></font></b>
-        <b>JL.............<br></b>
+        <b>JL...............<br></b>
       </td>
       <td width=100></td>
     </tr>
@@ -38,8 +38,8 @@
       <div class="col-sm-4 invoice-col">
         Tanggal : {{\Carbon\Carbon::today()->format('d/m/Y')}}
         <address>
-          <strong>PT Candi Arta</strong><br>
-          JL................ <br>
+          <strong>PT Candi Arta.</strong><br>
+          JL............... <br>
           Phone: 0878-2134-5432<br>
           Email: candiarta@gmail.com
         </address>
@@ -48,7 +48,7 @@
       <div class="col-sm-4 invoice-col">
         <br><br><br>
         <address>
-            <h3><strong>LAPORAN SUPPLIER</strong></h3>
+            <h3><strong>LAPORAN PELANGGAN</strong></h3>
             
         </address>
       </div>
@@ -63,7 +63,7 @@
           <thead>
           <tr>
             <th>No</th>
-            <th>Nama Supplier</th>
+            <th>Nama</th>
             <th>Alamat</th>
             <th>No Telp</th>
           </tr>

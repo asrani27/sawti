@@ -135,16 +135,16 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-            {{-- <li class="nav-item">
+            <li class="nav-item">
               <a href="/laporan/stok" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Lap. Emas</p>
+                <p>Lap. Stok </p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/laporan/retail" class="nav-link">
+              <a href="/laporan/pelanggan" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Lap. Kustomer</p>
+                <p>Lap. Pelanggan</p>
               </a>
             </li>
             <li class="nav-item">
@@ -152,14 +152,38 @@
                 <i class="far fa-circle nav-icon"></i>
                 <p>Lap. Supplier</p>
               </a>
-            </li> --}}
-            {{-- <li class="nav-item">
+            </li> 
+            <li class="nav-item">
+              <a href="/laporan/pekerja" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Lap. Pekerja</p>
+              </a>
+            </li> 
+            <li class="nav-item">
+              <a href="/laporan/tanam" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Lap. Tanam</p>
+              </a>
+            </li> 
+            <li class="nav-item">
+              <a href="/laporan/perawatan" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Lap. Perawatan</p>
+              </a>
+            </li> 
+            <li class="nav-item">
+              <a href="/laporan/panen" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Lap. Panen</p>
+              </a>
+            </li> 
+             {{-- <li class="nav-item">
               <a href="/laporan/pengeluaran" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Lap. Pengeluaran</p>
               </a>
             </li> --}}
-              {{-- <li class="nav-item">
+              <li class="nav-item">
                 <a href="/laporan/penjualan" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lap. Penjualan</p>
@@ -170,7 +194,7 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lap. Pembelian</p>
                 </a>
-              </li> --}}
+              </li>
               {{-- <li class="nav-item">
                 <a href="/laporan/laba" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
