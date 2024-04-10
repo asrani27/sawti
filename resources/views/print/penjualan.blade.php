@@ -25,8 +25,8 @@
     <tr>
       <td width=100></td>
       <td align=center class="judul"><b><font size="5">
-        Toko Mas Kilau<br /></font></b>
-        <b>Kabupaten Lamandau <br></b>
+       PT Candi Arta<br /></font></b>
+        <b>JL..............<br></b>
       </td>
       <td width=100></td>
     </tr>
@@ -39,10 +39,10 @@
       <div class="col-sm-4 invoice-col">
         Tanggal : {{\Carbon\Carbon::today()->format('d/m/Y')}}
         <address>
-          <strong>Toko Mas Kilau.</strong><br>
-          Kabupaten Lamandau <br>
+          <strong>PT Candi Arta.</strong><br>
+          JL............ <br>
           Phone: 0878-2134-5432<br>
-          Email: tokomas@gmail.com
+          Email: candiarta@gmail.com
         </address>
       </div>
       <!-- /.col -->
@@ -65,7 +65,7 @@
             <th>No</th>
             <th>Tanggal</th>
             <th>No Transaksi</th>
-            <th>KUstomer</th>
+            <th>Pelanggan</th>
             <th>Barang Yg Di Jual</th>
             <th>Total</th>
           </tr>
@@ -79,11 +79,11 @@
                     <td>{{$no++}}</td>
                     <td>{{$item->created_at}}</td>
                     <td>{{$item->no_transaksi}}</td>
-                    <td>{{$item->retail->nama}}</td>
+                    <td>{{$item->pelanggan->nama}}</td>
                     <td>
                         <ul>
                         @foreach ($item->penjualan_detail as $i)
-                            <li>{{$i->barang->nama}} - {{$i->jumlah}} buah - @currency($i->harga)</li>
+                            <li>{{$i->bibit->jenis}} - {{$i->jumlah}} buah - @currency($i->harga)</li>
                         @endforeach
                         </ul>
                     </td>

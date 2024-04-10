@@ -2,18 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Barang;
 use App\Bibit;
+use App\Panen;
+use App\Sawit;
+use App\Tanam;
+use App\Barang;
 use App\Retail;
+use App\Pekerja;
 use App\Kustomer;
-use App\Pelanggan;
 use App\Supplier;
+use App\Pelanggan;
 use App\Pembelian;
 use App\Penjualan;
+use App\Perawatan;
 use App\Pengeluaran;
 use App\Retur_pembelian;
 use App\Retur_penjualan;
-use App\Sawit;
 use Illuminate\Http\Request;
 
 class LaporanController extends Controller
@@ -66,6 +70,28 @@ class LaporanController extends Controller
         return view('laporan.perawatan');
     }
 
+
+    public function pekerjaprint()
+    {
+        $data = Pekerja::get();
+        return view('print.pekerja', compact('data'));
+    }
+    public function tanamprint()
+    {
+        $data = Tanam::get();
+        return view('print.tanam', compact('data'));
+    }
+    public function panenprint()
+    {
+        $data = Panen::get();
+        return view('print.panen', compact('data'));
+    }
+    public function perawatanprint()
+    {
+        $data = Perawatan::get();
+        return view('print.perawatan', compact('data'));
+    }
+    
 
     public function pelanggan()
     {

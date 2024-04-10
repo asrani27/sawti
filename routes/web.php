@@ -170,6 +170,12 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/laporan/panen', 'LaporanController@panen');
     Route::get('/laporan/perawatan', 'LaporanController@perawatan');
 
+
+    Route::get('/laporan/pekerja/print', 'LaporanController@pekerjaprint');
+    Route::get('/laporan/tanam/print', 'LaporanController@tanamprint');
+    Route::get('/laporan/panen/print', 'LaporanController@panenprint');
+    Route::get('/laporan/perawatan/print', 'LaporanController@perawatanprint');
+
     Route::post('laporan/pembelian/bulan', 'LaporanController@bulanpembelian');
     Route::post('laporan/pembelian/tahun', 'LaporanController@tahunpembelian');
     Route::get('/laporan/returpenjualan/print', 'LaporanController@printreturpenjualan');
