@@ -89,7 +89,6 @@
       <!-- /.col -->
     </div>
     <!-- /.row -->
-
     {{-- <div class="row">
       <!-- accepted payments column -->
       <div class="col-6">
@@ -113,6 +112,19 @@
     <!-- /.row -->
   </section>
   <!-- /.content -->
+<br/>
+<table width="100%">
+  <tr>
+    <td width="70%"></td>
+    <td style="text-align: center">
+      <strong>
+      Pimpinan<br/><br/><br/>
+
+      Rudy Susanto
+    </strong>
+    </td>
+  </tr>
+</table>
 </div>
 <!-- ./wrapper -->
 

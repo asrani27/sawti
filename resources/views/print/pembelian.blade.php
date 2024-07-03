@@ -39,7 +39,6 @@
         Tanggal : {{\Carbon\Carbon::today()->format('d/m/Y')}}
         <address>
           <strong>PT Candi Arta.</strong><br>
-          JL............... <br>
           Phone: 0878-2134-5432<br>
           Email: candiarta@gmail.com
         </address>
@@ -108,6 +107,19 @@
     
   </section>
   <!-- /.content -->
+  <br/>
+<table width="100%">
+  <tr>
+    <td width="70%"></td>
+    <td style="text-align: center">
+      <strong>
+      Pimpinan<br/><br/><br/>
+
+      Rudy Susanto
+    </strong>
+    </td>
+  </tr>
+</table>
 </div>
 <!-- ./wrapper -->
 
