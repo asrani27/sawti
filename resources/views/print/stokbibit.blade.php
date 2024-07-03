@@ -25,7 +25,7 @@
       <td width=100></td>
       <td align=center class="judul"><b><font size="5">
         PT Candi Arta<br /></font></b>
-        <b>Jl................. <br></b>
+        <b>Jl. Desa tajau pecah ,RT.12 RW. 03 dusun batu brajang, Kec. Batu Ampar, Kabupaten Tanah Laut, Kalimantan Selatan 70882<br></b>
       </td>
       <td width=100></td>
     </tr>
@@ -39,7 +39,6 @@
         Tanggal : {{\Carbon\Carbon::today()->format('d/m/Y')}}
         <address>
           <strong>PT Candi Arta</strong><br>
-          <b>Jl................. <br></b>
           Phone: 0878-2134-5432<br>
           Email: candiarta@gmail.com
         </address>
